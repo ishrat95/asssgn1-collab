@@ -7,22 +7,16 @@ router.get('/',(req, res, next) => {
 });
 
 router.get('/about',(req, res, next) => {
-  res.render('index', { title: 'About' });
+  res.render('about', { title: 'About' });
 });
 
 
-router.get('/contact',(req, res, next) => {
-  res.render('index', { title: 'Contact' });
-});
 
 
-router.get('/product',(req, res, next) => {
-  res.render('index', { title: 'Products' });
-});
 
 
 router.get('/Services',(req, res, next) => {
-  res.render('index', { title: 'Services' });
+  res.render('service', { title: 'Services' });
 });
 
 

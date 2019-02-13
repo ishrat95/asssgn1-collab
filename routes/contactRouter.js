@@ -3,7 +3,8 @@ let router = express.Router();
 
 
 router.get('/',(req, res, next) => {
-    res.render('projects/index', { title: 'Projects' });
+    res.render('contact/index', { title: 'Contact' });
   });
+  
 
-  module.exports = router;
+module.exports = router;
