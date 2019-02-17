@@ -1,3 +1,8 @@
+<!--
+  Student Name: Ishratben Vahora
+  StudentID: 300986257
+  Date: 2019-02-16
+-->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -27,11 +32,53 @@
           
           <section class="collapse navbar-collapse" id="myTogglerNav">
               <ul class="navbar-nav ml-auto">
-                  <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
-                  <li class="nav-item"><a href="/about" class="nav-link">About</a></li>
-                  <li class="nav-item"><a href="/project" class="nav-link">Project</a></li>
-                  <li class="nav-item"><a href="/Services" class="nav-link">Services</a></li>
-                  <li class="nav-item"><a href="/contact" class="nav-link">Contact</a></li>
+                  
+        <% if(title== "Home"){%>
+        <li class="nav-item active">
+          <% }
+     else{%>
+        <li class="nav-item">
+          <% } %>
+          <a class="nav-link" href="/">
+            <i class="fa fa-hotel"></i> Home
+            <span class="sr-only">(current)</span></a>
+        </li>
+        <% if(title== "About"){%>
+        <li class="nav-item active">
+          <% }
+     else{%>
+        <li class="nav-item">
+          <% } %>
+          <a class="nav-link" href="/about">
+            <i class="fa fa-eye"></i> About</a>
+        </li>
+        <% if(title== "Project"){%>
+        <li class="nav-item active">
+          <% }
+     else{%>
+        <li class="nav-item">
+          <% } %>
+          <a class="nav-link" href="/project">
+            <i class="fa fa-save"></i> Projects</a>
+        </li>
+        <% if(title== "Services"){%>
+        <li class="nav-item active">
+          <% }
+     else{%>
+        <li class="nav-item">
+          <% } %>
+          <a class="nav-link" href="/services">
+            <i class="fa fa-list-alt"></i> Services</a>
+        </li>
+        <% if(title== "Contact"){%>
+        <li class="nav-item active">
+          <% }
+     else{%>
+        <li class="nav-item">
+          <% } %>
+          <a class="nav-link" href="/contact">
+            <i class="fa fa-address-book"></i> Contact</a>
+        </li>
                 </ul>
           </section>
         </div>

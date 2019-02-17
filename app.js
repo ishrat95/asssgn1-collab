@@ -1,3 +1,9 @@
+/*
+  Student Name: Ishratben Vahora
+  StudentID: 300986257
+  Date: 2019-02-16
+*/
+
 let createError = require('http-errors');
 let express = require('express');
 let path = require('path');
@@ -6,7 +12,7 @@ let logger = require('morgan');
 
 let indexRouter = require('./routes/index');
 
-let projectRouter = require('./routes/projectRouter');
+
 let contactRouter = require('./routes/contactRouter');
 
 let app = express();
@@ -25,7 +31,7 @@ app.use(express.static(path.join(__dirname, 'node_modules')));
 
 
 app.use('/', indexRouter);
-app.use('/project',projectRouter);
+
 app.use('/contact',contactRouter);
 
 
