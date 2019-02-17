@@ -14,62 +14,26 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="/"><img src="../Assets/Images/ishratlogo.png" WIDTH=110 HEIGHT=50></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ml-auto">
-      
-        <% if(title== "Home"){%>
-        <li class="nav-item active">
-          <% }
-     else{%>
-        <li class="nav-item">
-          <% } %>
-          <a class="nav-link" href="/">
-            <i class="fa fa-hotel"></i> Home
-            <span class="sr-only">(current)</span></a>
-        </li>
-        <% if(title== "About"){%>
-        <li class="nav-item active">
-          <% }
-     else{%>
-        <li class="nav-item">
-          <% } %>
-          <a class="nav-link" href="/about">
-            <i class="fa fa-eye"></i> About</a>
-        </li>
-        <% if(title== "Services"){%>
-        <li class="nav-item active">
-          <% }
-     else{%>
-        <li class="nav-item">
-          <% } %>
-          <a class="nav-link" href="/Services">
-            <i class="fa fa-save"></i> Services</a>
-        </li>
-        <% if(title== "Projects"){%>
-        <li class="nav-item active">
-          <% }
-     else{%>
-        <li class="nav-item">
-          <% } %>
-          <a class="nav-link" href="/project">
-            <i class="fa fa-list-alt"></i> Projects</a>
-        </li>
-        <% if(title== "Contact"){%>
-        <li class="nav-item active">
-          <% }
-     else{%>
-        <li class="nav-item">
-          <% } %>
-          <a class="nav-link" href="/contact">
-            <i class="fa fa-address-book"></i> Contact</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
+   <header class="site-header">
+      <nav class="site-nav family-sans text-uppercase navbar navbar-expand-md bg-secondary navbar-dark">
+        <div class="container">
+          
+          <a class="navbar-brand" href="/"><i class="fa fa-cube"> IV</i></a>
+          
+          <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#myTogglerNav"
+            aria-controls="#myTogglerNav" aria-label="Toggle Navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          
+          <section class="collapse navbar-collapse" id="myTogglerNav">
+              <ul class="navbar-nav ml-auto">
+                  <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                  <li class="nav-item"><a href="/about" class="nav-link">About</a></li>
+                  <li class="nav-item"><a href="/Services" class="nav-link">Services</a></li>
+                  <li class="nav-item"><a href="/project" class="nav-link">Projects</a></li>
+                  <li class="nav-item"><a href="/contact" class="nav-link">Contact</a></li>
+                </ul>
+          </section>
+        </div>
+      </nav>
+   </header>
